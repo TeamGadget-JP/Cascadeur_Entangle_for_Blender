@@ -16,6 +16,119 @@ Automatic correction of coordinate-system differences using rest-pose quaternion
 
 These four technologies form the foundation shared by every TeamGadget synchronization project, including CEU, CEB, and future tools.
 
+# English <br>
+# Cascadeur Entangle for Blender (CEB) Beta Test<br>
+CEB is the successor to the previous version, **"Gadget Entangle for Cascadeur / Blender (GECB)"**.<br>
+While inheriting the core functionality of GECB, CEB has been significantly refined and improved.<br>
+With four new technologies, CEB completely removes the CC-dependent workflow of GECB and achieves<br>
+**Rig-Agnostic Synchronization** that is independent of any specific rig.<br>
+
+# Development Environment / System Requirements<br>
+Windows only (uses Windows API internally)<br>
+Blender 5.1.1<br>
+Cascadeur Pro 2026.1.3<br>
+
+# CEB Overview<br>
+1. Real-time synchronization<br>
+2. Rig-Agnostic Synchronization<br>
+3. Object Mode / Pose Mode synchronization and synchronization during animation playback<br>
+4. Simultaneous synchronization of multiple characters (up to 5 characters)<br>
+5. First implementation of the new **Smart Swizzle** technology<br>
+6. Improved robustness by assigning a dedicated local port to each character<br>
+8. Supports motions with root bone movement<br>
+9. Built-in timeline synchronization<br>
+10. Individual offline baking support<br>
+11. Designed to leave the original rig completely untouched. (Once synchronization is stopped, only the original model remains.)<br>
+
+# What is Rig-Agnostic Synchronization? (Verification Stage)<br>
+By dynamically handshaking the bone hierarchy and bone names from Blender to Cascadeur,<br>
+the goal is to eliminate retargeting work as much as possible. In theory, any character that can be imported into Blender and Cascadeur and successfully rigged should be able to synchronize.<br>
+Whether it is a humanoid, quadruped, mechanical character, multi-legged creature, monster, or any other character that can be rigged in Cascadeur,<br>
+it is expected that almost all of them can be synchronized.<br>
+
+Verified Rigs<br>
+CC Rig<br>
+Mixamo Rig (use **Spine2**)<br>
+Dracorex (included with Cascadeur)<br>
+Almost all humanoid characters included with Cascadeur<br>
+
+# Local Port Assignment <br>
+8920 Reserved for the system<br>
+8921 Character 1<br>
+8922 Character 2<br>
+・<br>
+・<br>
+8929 Reserved for timeline synchronization<br>
+
+# Installation <br>
+1. Place `CEB_Sender_v1.pyc` into the Cascadeur Python plugin folder.<br>
+   `[Cascadeur Installation Folder]\resources\scripts\python\commands\`<br>
+2. Install `CEB_Receiver_v1.py` as a Blender add-on.<br>
+
+# Usage <br>
+
+Step 1: Import the same character into both Blender and Cascadeur.<br>
+
+Step 2: After Auto-Rigging the character in Cascadeur, return it to its default pose.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Important:** This is the reference for everything. Always use either an **A-pose** or **T-pose**.<br>
+
+Step 3: In the CEB panel in Blender, assign the target Armature to **Slot0 → Armature**.<br>
+
+Step 4: Enter the bone names for **Root** and **Pelvis1**.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Example:<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Mixamo Rig → Root: `mixamorig:Hips` Pelvis1: `mixamorig:Hips`<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;CC Rig → Root: `CC_Base_BoneRoot` Pelvis1: `CC_Base_Hip`<br>
+
+Step 5: Click **START Entangle** to begin synchronization. Smart Swizzle will also be cached automatically.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;If **SS Cached** appears and the button turns blue, everything is ready.<br>
+
+That's all.<br>
+
+# If Synchronization Does Not Work <br>
+1. Do both characters have the same bone hierarchy and bone names?<br>
+2. Try pressing **START → Stop → START** once on the Blender side.<br>
+3. To maintain smooth real-time synchronization, the maximum number of synchronized bones per character is **255** (bone IDs **0–254**).<br>
+4. Always start synchronization from Cascadeur first, then Blender.<br>
+
+# Setting Up Multiple Characters in Cascadeur<br>
+Example: Setting up two characters<br>
+1. Create a scene, then import and rig the first character as usual.<br>
+2. Create another scene for the second character. Import and rig the second character as usual.<br>
+3. Save and close the scene containing the second character.<br>
+4. Return to the first character's scene, then select `File -> Import -> Import Scene To Current...` and import the second scene.<br>
+5. The second character's bone names will automatically receive the `character1:` prefix.<br>
+6. The third character can be added in the same way.<br>
+
+# Timeline Synchronization and Offline Baking<br>
+1. Use the **Sync TimeLine** button to enable/disable timeline synchronization, and use the **Blender / Cascadeur** button to switch the master.<br>
+2. In **Bake Targets**, select the slot containing the character(s) you want to bake.<br>
+3. Set Blender as the master, specify the bake range, then click **Bake Selected Targets** to start baking.<br>
+4. The default **Bake Delay** value is recommended. Adjust it if necessary to match your PC environment.<br>
+
+# After Finalizing the Animation...<br>
+Once a character's animation has been finalized, simply remove it from its slot and it will return to its original state.<br>
+I say "return," but in reality, nothing was ever modified on the original rig.<br>
+The character is only being controlled temporarily during synchronization.<br>
+This is what I consider the most elegant part of the Gadget tools—we never modify the original rig.<br>
+Once synchronization is finished, every trace disappears without a trace.<br>
+That's the TeamGadget philosophy—something I believe cannot easily be replicated elsewhere.<br>
+
+Team Gadget YouTube<br>
+https://www.youtube.com/channel/UCj9OYwzMAIgYAeVkTV4wczw<br>
+
+# Disclaimer <br>
+CEB is an independent project developed by TeamGadget.<br>
+Cascadeur is a trademark and/or property of Nekki.<br>
+Blender is a trademark and/or property of Blender Foundation.<br>
+This project is not an official product of Nekki or Blender Foundation, and is not endorsed by, affiliated with, sponsored by, or officially supported by either organization.<br>
+
+---
+
 # 日本語 <br>
 # Cascadeur Entangle for Blender (CEB) βテスト<br>
 CEBは前作"Gadget Entangle for Cascadeur / Blender (GECB)"の後継バージョンになります。<br>

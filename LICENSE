@@ -1,1 +1,98 @@
+# Cascadeur Entangle for Blender (CEB) - End User License Agreement (EULA)
 
+Copyright (c) 2026 TeamGadget. All rights reserved.
+
+By downloading, installing, or using "Cascadeur Entangle for Blender" (hereinafter referred to as "the Software" or "CEB"), you agree to be bound by the terms of this End User License Agreement.
+
+## 1. OVERVIEW
+
+CEB is a free real-time synchronization tool designed to connect Cascadeur and Blender.
+
+The Software consists mainly of two components:
+* a) Blender-side component (`CEB_Receiver_v1.py` as an add-on)
+* b) Cascadeur-side Python component (`CEB_Sender_v1.pyc`)
+
+The Cascadeur-side Python component is distributed in compiled form (`.pyc`) because it includes Cascadeur license authentication logic and proprietary synchronization algorithms.
+
+## 2. CORE ARCHITECTURE PROTECTION AND INTELLECTUAL PROPERTY
+
+The Software is powered by the **"TeamGadget Core Architecture"** (hereinafter referred to as "the Core Architecture"). 
+
+The Core Architecture is a proprietary, universal real-time synchronization framework developed exclusively by TeamGadget, which includes but is not limited to four fundamental technologies:
+* **Handshake Protocol** (Automatic initialization and synchronization of character information)
+* **O(1) Runtime Cache** (Constant-time bone lookup for high-performance synchronization)
+* **Zero Calibration** (Automatic normalization of local transforms)
+* **Smart Swizzle** (Automatic correction of coordinate-system differences using rest-pose quaternion analysis)
+
+All rights, titles, interests, ownership, intellectual property rights, and trade secrets in and to the Software and the Core Architecture—including its underlying concepts, mathematical formulas, data structures, algorithms, workflow designs, logic patterns, and compiled binaries—belong exclusively to TeamGadget. 
+
+This Agreement grants you a limited right to use the Software, but does not transfer any ownership or intellectual property rights of the Software or the Core Architecture to you.
+
+## 3. GRANT OF LICENSE
+
+The Developer, TeamGadget, grants you a personal, non-exclusive, non-transferable, and free license to use the Software for personal or commercial animation production.
+
+Use of the Software requires a valid paid Cascadeur license, such as Cascadeur Indie, Pro, or Teams. The Software is not available for use with the free version of Cascadeur.
+
+Open-source components included in this project may be used in accordance with the open-source license provided in the repository. 
+
+However, the compiled Cascadeur-side component (`CEB_Sender_v1.pyc`), its license authentication logic, and the core synchronization logic of the Core Architecture are strictly proprietary, are not open source, and are subject to the restrictions described in this EULA.
+
+## 4. RESTRICTIONS
+
+You may NOT, under any circumstances:
+
+* **a)** Redistribute, share, sublicense, mirror, upload, or host the compiled Cascadeur-side component (`CEB_Sender_v1.pyc`) or any proprietary part of the Software on any other platform, website, repository, cloud storage, or file-sharing service.
+* **b)** Reverse engineer, decompile, disassemble, decrypt, unpack, or otherwise attempt to discover, extract, reconstruct, modify, or bypass the source code, internal logic, algorithms, or license authentication mechanism of the compiled Cascadeur-side component or the Core Architecture.
+* **c)** Copy, mimic, replicate, extract, or adapt the unique algorithms, logic, or architectural design of the Core Architecture (including but not limited to the Handshake Protocol, O(1) Runtime Cache, Zero Calibration, and Smart Swizzle) to develop, create, or assist in creating any competing synchronization tools, software, plugins, or frameworks.
+* **d)** Remove, bypass, disable, modify, or interfere with any license authentication, protection mechanism, copyright notice, or attribution included in the Software.
+* **e)** Modify, alter, or create derivative works based on the compiled Cascadeur-side component or the Core Architecture.
+* **f)** Sell, rent, lease, resell, bundle, or commercially monetize the Software itself.
+* **g)** Use the Software in a way that violates the license terms of Cascadeur, Blender, or any other third-party software used together with CEB.
+
+## 5. OPEN-SOURCE COMPONENTS
+
+Some parts of CEB may be provided as open-source components (such as the Blender-side script).
+
+You may inspect, modify, or use those specific open-source components according to the license terms specified in the repository. 
+
+This open-source grant applies strictly to the designated files and does not grant permission to reverse engineer, modify, redistribute, copy, or bypass the compiled Cascadeur-side component, its license authentication mechanism, or the underlying Core Architecture.
+
+## 6. NO SUPPORT OBLIGATION
+
+The Software is provided free of charge.
+
+The Developer is under no obligation to provide technical support, updates, bug fixes, compatibility fixes, or maintenance.
+
+Any updates, fixes, or improvements may be provided at the sole discretion of the Developer.
+
+## 7. DISCLAIMER OF WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+THE DEVELOPER DISCLAIMS ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ACCURACY, RELIABILITY, OR COMPATIBILITY WITH ANY SPECIFIC ENVIRONMENT, PROJECT, CHARACTER RIG, OR WORKFLOW.
+
+## 8. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR ANY CLAIM, DAMAGE, LOSS, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR INABILITY TO USE THE SOFTWARE.
+
+THIS INCLUDES, BUT IS NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR BUSINESS-RELATED DAMAGES, LOSS OF DATA, LOSS OF PROFITS, PROJECT FAILURE, PRODUCTION DELAYS, OR INTERRUPTION OF WORK.
+
+## 9. THIRD-PARTY SOFTWARE AND TRADEMARKS
+
+Cascadeur is a trademark and/or property of Nekki.
+Blender is a trademark and/or property of Blender Foundation.
+
+This Software is an independent project developed by TeamGadget.
+
+This Software is not affiliated with, endorsed by, sponsored by, or officially supported by Nekki or Blender Foundation.
+
+## 10. TERMINATION
+
+If you violate any term of this EULA, your license to use the Software will terminate automatically.
+
+Upon termination, you must immediately stop using the Software and delete all copies of the compiled Cascadeur-side component and the Software in your possession.
+
+## 11. ACCEPTANCE
+
+By downloading, installing, or using the Software, you acknowledge that you have read, understood, and agreed to this EULA.

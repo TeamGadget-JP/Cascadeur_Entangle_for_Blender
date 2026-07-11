@@ -67,14 +67,19 @@ Cascadeur同梱の人型キャラクターほぼ全て<br>
 
 # 使用方法 <br>
 step1: 同じキャラクターを双方へインポート<br>
+
 step2: Cascadeur側のキャラクターはオートリギング後、初期ポーズにして下さい。<br>
-   重要：これが全ての基準です。必ずAポーズもしくはTポーズで行ってください。<br>
+　　　　重要：これが全ての基準です。必ずAポーズもしくはTポーズで行ってください。<br>
+
 step3: Blender側CEBパネルSlot0のArmture:に同期対象のアーマチャをセットする。<br>
+
 step4: Root:とPelvis1:にボーン名を書き入れます。<br>
-   例：mixamoリグならRoot:`mixamorig:Hips` Pelvis1:`mixamorig:Hips`<br>
-   CCリグならRoot:`CC_Base_BoneRoot` Pelvis1:`CC_Base_Hip`<br>
+　　　　例：mixamoリグならRoot:`mixamorig:Hips` Pelvis1:`mixamorig:Hips`<br>
+　　　　CCリグならRoot:`CC_Base_BoneRoot` Pelvis1:`CC_Base_Hip`<br>
+
 step5: START Entangleで同期スタート、同時にSmart Swizzleもキャッシュされます。<br>
-   `SS Cashed`となりボタンが青色点灯していればOKです。
+　　　　`SS Cashed`となりボタンが青色点灯していればOKです。<br>
+
 以上です。<br>
 
 # 同期しない場合 <br>

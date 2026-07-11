@@ -14,7 +14,8 @@ Automatic correction of coordinate-system differences using rest-pose quaternion
 
 ---
 
-These four technologies form the foundation shared by every TeamGadget synchronization project, including CEU, CEB, and future tools.
+These four technologies form the foundation shared by every TeamGadget synchronization project, including CEU, CEB, and future tools.<br>
+Powered by TeamGadget Core Architecture<br>
 
 # English <br>
 # Cascadeur Entangle for Blender (CEB) Beta Test<br>

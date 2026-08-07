@@ -1,12 +1,12 @@
-日本語（Japanese）
-【重要】Cascadeur 2026.2への対応について
-現在、最新バージョンのCascadeur 2026.2に向けた対応作業を進めております。アップデート完了まで、今しばらくお待ちください。
-なお、仕様変更に伴い、本ツールはCascadeur 2026.2では動作いたしません。引き続きご利用いただく場合は、Cascadeur 2026.1.3にてご使用くださいますようお願いいたします。
+I will later organize the repository and upload older versions.
+Until then, please back up your old version files.
+Change in installation location (The installation location has changed in 2026.2)
+[Cascadeur installation folder]/resources/scripts/python/scripts/
 
-英語（English）
-[Important] Regarding Cascadeur 2026.2 Compatibility
-We are currently working on an update to support the latest release, Cascadeur 2026.2. Please bear with us while we complete this process.
-Please note that due to recent changes, this tool does not currently work with Cascadeur 2026.2. If you wish to continue using it, please stay on Cascadeur version 2026.1.3.
+後にリポジトリを整理して旧バージョンもアップロードします。
+それまでお手元の古いバージョンのファイルはバックアップして下さい。
+導入場所の変更(2026.2では導入場所が変更されています)
+[Cascadeurインストールフォルダ]/resources/scripts/python/scripts/
 
 # TeamGadget Core Architecture
 **A universal real-time synchronization architecture for character animation across multiple DCC applications and game engines.**

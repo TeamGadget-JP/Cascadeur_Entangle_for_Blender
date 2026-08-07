@@ -1,10 +1,10 @@
-Cascadeur 2026.2 Compatibility Status<br>
+⚠️Cascadeur 2026.2 Compatibility Status<br>
 I will later organize the repository and upload older versions.<br>
 Until then, please back up your old version files.<br>
 Change in installation location (The installation location has changed in 2026.2)<br>
 [Cascadeur installation folder]/resources/scripts/python/scripts/<br>
 
-Cascadeur2026.2対応状況<br>
+⚠️Cascadeur2026.2対応状況<br>
 後にリポジトリを整理して旧バージョンもアップロードします。<br>
 それまでお手元の古いバージョンのファイルはバックアップして下さい。<br>
 導入場所の変更(2026.2では導入場所が変更されています)<br>

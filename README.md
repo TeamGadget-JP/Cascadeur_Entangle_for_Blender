@@ -1,12 +1,12 @@
-I will later organize the repository and upload older versions.
-Until then, please back up your old version files.
-Change in installation location (The installation location has changed in 2026.2)
-[Cascadeur installation folder]/resources/scripts/python/scripts/
+I will later organize the repository and upload older versions.<br>
+Until then, please back up your old version files.<br>
+Change in installation location (The installation location has changed in 2026.2)<br>
+[Cascadeur installation folder]/resources/scripts/python/scripts/<br>
 
-後にリポジトリを整理して旧バージョンもアップロードします。
-それまでお手元の古いバージョンのファイルはバックアップして下さい。
-導入場所の変更(2026.2では導入場所が変更されています)
-[Cascadeurインストールフォルダ]/resources/scripts/python/scripts/
+後にリポジトリを整理して旧バージョンもアップロードします。<br>
+それまでお手元の古いバージョンのファイルはバックアップして下さい。<br>
+導入場所の変更(2026.2では導入場所が変更されています)<br>
+[Cascadeurインストールフォルダ]/resources/scripts/python/scripts/<br>
 
 # TeamGadget Core Architecture
 **A universal real-time synchronization architecture for character animation across multiple DCC applications and game engines.**
